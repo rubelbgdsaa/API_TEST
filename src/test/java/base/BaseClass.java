@@ -73,6 +73,10 @@ public class BaseClass {
 			// driver.manage().window().maximize();
 		}
 		
+		
+		
+		
+		
 		// else if(config.getProperty("BROWSER").equals("firefox"));
 		// System.getProperty("webdriver.gekho.driver","C:\\Java\\eclipse-workspace\\Craigslist");
 		// driver = new FirefoxDriver();
