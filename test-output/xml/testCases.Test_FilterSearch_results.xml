@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="113.281">
+  <properties />
+  
+  
+            <testcase name="test_FilterSearch" time="21.252" classname="testCases.Test_FilterSearch" />
+                <testcase name="test_FilterSearch" time="25.083" classname="testCases.Test_FilterSearch" />
+                <testcase name="test_FilterSearch" time="21.793" classname="testCases.Test_FilterSearch" />
+                <testcase name="test_FilterSearch" time="23.683" classname="testCases.Test_FilterSearch" />
+                <testcase name="test_FilterSearch" time="21.470" classname="testCases.Test_FilterSearch" />
+      
+</testsuite>
