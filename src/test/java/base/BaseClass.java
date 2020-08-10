@@ -1,29 +1,31 @@
 package base;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.DataProvider;
 
+import com.mysql.cj.mysqlx.protobuf.MysqlxDatatypes.Scalar.String;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import utilities.ExcelReader;
 import utilities.ExtentManager;
 
-import utilities.ExcelReader;
 
-import org.apache.log4j.Logger;
+
 
 
 
@@ -68,9 +70,14 @@ public class BaseClass {
 		config.load(fis);
 
 		if (config.getProperty("BROWSER").equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", projectPath + "\\src\\test\\resources\\executables\\chromedriver.exe");
-			driver = new ChromeDriver();
-			// driver.manage().window().maximize();
+		//	System.setProperty("webdriver.chrome.driver", projectPath + "\\src\\test\\resources\\executables\\chromedriver.exe");
+			//driver = new ChromeDriver();
+	//		 driver.manage().window().maximize();
+			 WebDriverManager.chromedriver().setup();
+		        //Create driver object for Chrome
+		         driver = new ChromeDriver();
+		      //  driver.get(config.getProperty("BASE_URL"));
+
 		}
 		
 		
@@ -160,11 +167,11 @@ public class BaseClass {
 	
 	@AfterSuite
 	public void tearDowm() {
-		driver.close();
-		log.debug("TEST IS COMPLETED");
+	/*	driver.close();
+		log.debug("TEST IS COMPLETED");*/
 	}
 	
-	/*
+/*	
 	@DataProvider
 	public Object[][] getData(){
 		String sheetName = "Test_FilterSearch";

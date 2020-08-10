@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="4.729">
+  <properties />
+  
+  
+            <testcase name="previous_Button_isEnabled" time="0.069" classname="testCases.Test_Search_Results_Pagegination" />
+                <testcase name="next_boutton_IsDisplayed" time="0.117" classname="testCases.Test_Search_Results_Pagegination" />
+                <testcase name="previous_Button_IsDisplayed" time="0.122" classname="testCases.Test_Search_Results_Pagegination" />
+                <testcase name="next_boutton_Enabled" time="0.083" classname="testCases.Test_Search_Results_Pagegination" />
+                <testcase name="Search_Results_Pagegination_IsDisplayed" time="4.338" classname="testCases.Test_Search_Results_Pagegination" />
+      
+</testsuite>

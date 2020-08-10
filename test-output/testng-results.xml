@@ -1,84 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-04T00:40:51 CDT" name="Suite" finished-at="2020-08-04T00:42:55 CDT" duration-ms="123575">
+  <suite name="Default suite" duration-ms="52857" started-at="2020-08-09T23:28:44 CDT" finished-at="2020-08-09T23:29:37 CDT">
     <groups>
     </groups>
-    <test started-at="2020-08-04T00:40:51 CDT" name="Test" finished-at="2020-08-04T00:42:55 CDT" duration-ms="123575">
-      <class name="testCases.Test_FilterSearch">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.Test_FilterSearch@2101b44a]" started-at="2020-08-04T00:40:46 CDT" name="setup" finished-at="2020-08-04T00:40:51 CDT" duration-ms="5048" status="PASS">
+    <test name="Default test" duration-ms="52857" started-at="2020-08-09T23:28:44 CDT" finished-at="2020-08-09T23:29:37 CDT">
+      <class name="testCases.Test_Sum_All_The_search_List_Price">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.Test_Sum_All_The_search_List_Price@8462f31]" name="setup" is-config="true" duration-ms="11386" started-at="2020-08-09T23:28:32 CDT" finished-at="2020-08-09T23:28:44 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testCases.Test_FilterSearch@2101b44a]" started-at="2020-08-04T00:40:51 CDT" name="login" finished-at="2020-08-04T00:41:00 CDT" duration-ms="8315" status="PASS">
+        <test-method status="PASS" signature="login()[pri:0, instance:testCases.Test_Sum_All_The_search_List_Price@8462f31]" name="login" is-config="true" duration-ms="25116" started-at="2020-08-09T23:28:44 CDT" finished-at="2020-08-09T23:29:09 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="test_FilterSearch(java.util.Hashtable)[pri:0, instance:testCases.Test_FilterSearch@2101b44a]" started-at="2020-08-04T00:41:00 CDT" name="test_FilterSearch" data-provider="dp" finished-at="2020-08-04T00:41:25 CDT" duration-ms="25083" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{totalItem=, hasImage=1.0, mfzMiles=1.0, mfzZip=75062.0, searchTitlesOnly=1.0}]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="Sum_all_the_list_prices()[pri:0, instance:testCases.Test_Sum_All_The_search_List_Price@8462f31]" name="Sum_all_the_list_prices" duration-ms="24190" started-at="2020-08-09T23:29:09 CDT" finished-at="2020-08-09T23:29:33 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_FilterSearch -->
-        <test-method signature="test_FilterSearch(java.util.Hashtable)[pri:0, instance:testCases.Test_FilterSearch@2101b44a]" started-at="2020-08-04T00:41:25 CDT" name="test_FilterSearch" data-provider="dp" finished-at="2020-08-04T00:41:47 CDT" duration-ms="21252" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{totalItem=, hasImage=1.0, mfzMiles=1.0, mfzZip=75063.0, searchTitlesOnly=1.0}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_FilterSearch -->
-        <test-method signature="test_FilterSearch(java.util.Hashtable)[pri:0, instance:testCases.Test_FilterSearch@2101b44a]" started-at="2020-08-04T00:41:47 CDT" name="test_FilterSearch" data-provider="dp" finished-at="2020-08-04T00:42:08 CDT" duration-ms="21470" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{totalItem=, hasImage=1.0, mfzMiles=1.0, mfzZip=75067.0, searchTitlesOnly=1.0}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_FilterSearch -->
-        <test-method signature="test_FilterSearch(java.util.Hashtable)[pri:0, instance:testCases.Test_FilterSearch@2101b44a]" started-at="2020-08-04T00:42:08 CDT" name="test_FilterSearch" data-provider="dp" finished-at="2020-08-04T00:42:30 CDT" duration-ms="21793" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{totalItem=, hasImage=1.0, mfzMiles=1.0, mfzZip=75069.0, searchTitlesOnly=1.0}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_FilterSearch -->
-        <test-method signature="test_FilterSearch(java.util.Hashtable)[pri:0, instance:testCases.Test_FilterSearch@2101b44a]" started-at="2020-08-04T00:42:30 CDT" name="test_FilterSearch" data-provider="dp" finished-at="2020-08-04T00:42:54 CDT" duration-ms="23683" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{totalItem=, hasImage=1.0, mfzMiles=1.0, mfzZip=75050.0, searchTitlesOnly=1.0}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_FilterSearch -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:testCases.Test_FilterSearch@2101b44a]" started-at="2020-08-04T00:42:54 CDT" name="logout" finished-at="2020-08-04T00:42:55 CDT" duration-ms="1057" status="PASS">
+        </test-method> <!-- Sum_all_the_list_prices -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:testCases.Test_Sum_All_The_search_List_Price@8462f31]" name="logout" is-config="true" duration-ms="3420" started-at="2020-08-09T23:29:33 CDT" finished-at="2020-08-09T23:29:37 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="tearDowm()[pri:0, instance:testCases.Test_FilterSearch@2101b44a]" started-at="2020-08-04T00:42:55 CDT" name="tearDowm" finished-at="2020-08-04T00:42:55 CDT" duration-ms="482" status="PASS">
+        <test-method status="PASS" signature="tearDowm()[pri:0, instance:testCases.Test_Sum_All_The_search_List_Price@8462f31]" name="tearDowm" is-config="true" duration-ms="1" started-at="2020-08-09T23:29:37 CDT" finished-at="2020-08-09T23:29:37 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDowm -->
-      </class> <!-- testCases.Test_FilterSearch -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- testCases.Test_Sum_All_The_search_List_Price -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

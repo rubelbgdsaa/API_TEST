@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1.169">
+  <properties />
+  
+  
+            <testcase name="Verify_event_calendar_link_is_displayed" time="1.169" classname="testCases.Test_Verify_Event_Calender" />
+      
+</testsuite>

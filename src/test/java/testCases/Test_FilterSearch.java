@@ -48,7 +48,7 @@ public class Test_FilterSearch extends BaseClass {
 		Thread.sleep(4000);
 		System.out.println("zip");
 		
-		elementClick(By.xpath("//button[@class='searchlink linklike changed_input clickme']"));
+		/*elementClick(By.xpath("//button[@class='searchlink linklike changed_input clickme']"));
 		System.out.println("update");
 		
 		if ( driver.findElement(By.xpath("//span[@class='totalcount']"))!= null ) {

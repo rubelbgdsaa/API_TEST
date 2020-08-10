@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="4.565">
+  <properties />
+  
+  
+            <testcase name="center" time="2.214" classname="testCases.Test_CL_Worlwide_Is_Displayed" />
+                <testcase name="verify_CL_Worlwide_Is_Displayed" time="2.351" classname="testCases.Test_CL_Worlwide_Is_Displayed" />
+      
+</testsuite>

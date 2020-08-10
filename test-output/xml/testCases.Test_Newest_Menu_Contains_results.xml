@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="74.274">
+  <properties />
+  
+  
+            <testcase name="Newest_Menu_Contains" time="74.274" classname="testCases.Test_Newest_Menu_Contains" />
+      
+</testsuite>

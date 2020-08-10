@@ -18,27 +18,34 @@ public class Test_Verify_Event_Calender extends BaseClass {
 		// Verify event calendar link is Enabled
 		boolean event_calendar_link_is_displayed1 = driver.findElement(By.linkText("event calendar")).isEnabled();
 		Assert.assertTrue(event_calendar_link_is_displayed1 == true, "Asserting is Enabled");
+	
 	}
-
-	@Test(priority = 2)
+/*	@Test(priority = 2)
 	void event_calendar_is_Clickable() throws InterruptedException {
 		boolean  result= isClickable(By.linkText("event calendar"));
 		Assert.assertEquals(result, true);
-		/*
+		
 		try {
 			elementClick(By.linkText("event calendar"));
-			Assert.assertTrue(false);
+			Assert.assertTrue(true);
+		log.debug("open calender");
 			// driver.navigate().back();
 		} catch (NoSuchElementException ec) {
-			System.out.println(ec.getMessage());
+			//System.out.println(ec.getMessage());
+			log.debug(ec.getMessage());
 			Assert.assertTrue(true);
 			Thread.sleep(2000);
 		}
+		
 
-		System.out.println("No Exception");
+		//System.out.println("No Exception");
+		log.debug("No Exception");
+		
 		// login();
 		// logout();
-		*/ 
+		
 	}// event_calender
 		// Ctrl+A //Ctrl+Shift+F
+*/
+
 }// class

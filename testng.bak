@@ -10,11 +10,9 @@
 			<class name="testCases.Test_Map_Displayed" />
 			<class name="testCases.Test_HomePage_E2E" />
 			<class name="testCases.Test_Count_All_The_Search_List_Item" />
-			<class name="testCases.Test_Verfi_See" />
 			<class name="testCases.Test_City_IsDisplayed" />
 			<class name="testCases.Test_Search_Results_Pagegination" />
 			<class name="testCases.Test_Searched_Item_Title_Bar" />
-			<class name="testCases.Test_A" />
 			<class name="testCases.Test_Language_Change_E2E" />
 			<class name="testCases.Test_CL_Worlwide_Is_Displayed" />
 			<class name="testCases.Test_Save_Search_Properly" />

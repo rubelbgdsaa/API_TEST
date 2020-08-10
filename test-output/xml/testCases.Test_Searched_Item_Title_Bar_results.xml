@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.314">
+  <properties />
+  
+  
+            <testcase name="Searched_Item" time="2.314" classname="testCases.Test_Searched_Item_Title_Bar" />
+      
+</testsuite>

@@ -2,8 +2,8 @@ package testCases;
 
 
 
-import org.openqa.selenium.By;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -34,7 +34,7 @@ public class Test_City_IsDisplayed extends BaseClass {
 		// select Austin
 		*/
 		boolean City = driver.findElement(By.xpath(or.getProperty("CITY"))).isDisplayed();
-		Assert.assertEquals(City, false);
+		Assert.assertEquals(City, true);
 	}
 
 	@Test // Chose Furniture
