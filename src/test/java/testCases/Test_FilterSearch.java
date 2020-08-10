@@ -5,9 +5,6 @@ import java.util.Hashtable;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import com.gargoylesoftware.htmlunit.ElementNotFoundException;
-import com.thoughtworks.selenium.webdriven.commands.IsVisible;
-
 import org.testng.Assert;
 import org.testng.SkipException;
 

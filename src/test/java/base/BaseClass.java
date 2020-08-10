@@ -1,9 +1,11 @@
 package base;
 
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import java.io.FileNotFoundException;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,16 +18,12 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
-import com.mysql.cj.mysqlx.protobuf.MysqlxDatatypes.Scalar.String;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.ExcelReader;
 import utilities.ExtentManager;
-
-
-
 
 
 
@@ -40,9 +38,9 @@ public class BaseClass {
 	public static ExcelReader excel = new ExcelReader(
 			System.getProperty("user.dir") + "\\src\\test\\resources\\data\\testdata.xlsx");
 	
-	public static Logger log; //To log in Application log 
+	public static Logger log;
 	public static WebDriverWait wait;
-	public static ExtentTest test; //To log in Extent Report
+	public static ExtentTest test;
 	public ExtentReports rep = ExtentManager.getInstance();
 	public static String browser;
 	
@@ -54,7 +52,7 @@ public class BaseClass {
 
 		log = Logger.getLogger("devpinoyLogger"); 
 		
-		projectPath = System.getProperty("user.dir"); // C:\\Java\\eclipse-workspace\\Craigslist
+		projectPath = System.getProperty("user.dir"); 
 		
 		fis = new FileInputStream(projectPath + "\\src\\test\\resources\\properties\\OR.properties");
 		or = new Properties();// or = object repository
@@ -68,7 +66,6 @@ public class BaseClass {
 		fis = new FileInputStream(projectPath + "\\src\\test\\resources\\properties\\config.properties");
 		config = new Properties();
 		config.load(fis);
-
 		if (config.getProperty("BROWSER").equals("chrome")) {
 		//	System.setProperty("webdriver.chrome.driver", projectPath + "\\src\\test\\resources\\executables\\chromedriver.exe");
 			//driver = new ChromeDriver();

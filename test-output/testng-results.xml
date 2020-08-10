@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52857" started-at="2020-08-09T23:28:44 CDT" finished-at="2020-08-09T23:29:37 CDT">
+  <suite name="Default suite" duration-ms="80393" started-at="2020-08-10T14:51:56 CDT" finished-at="2020-08-10T14:53:17 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52857" started-at="2020-08-09T23:28:44 CDT" finished-at="2020-08-09T23:29:37 CDT">
-      <class name="testCases.Test_Sum_All_The_search_List_Price">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.Test_Sum_All_The_search_List_Price@8462f31]" name="setup" is-config="true" duration-ms="11386" started-at="2020-08-09T23:28:32 CDT" finished-at="2020-08-09T23:28:44 CDT">
+    <test name="Default test" duration-ms="80393" started-at="2020-08-10T14:51:56 CDT" finished-at="2020-08-10T14:53:17 CDT">
+      <class name="testCases.Test_City_IsDisplayed">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.Test_City_IsDisplayed@14555e0a]" name="setup" is-config="true" duration-ms="30828" started-at="2020-08-10T14:51:25 CDT" finished-at="2020-08-10T14:51:56 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testCases.Test_Sum_All_The_search_List_Price@8462f31]" name="login" is-config="true" duration-ms="25116" started-at="2020-08-09T23:28:44 CDT" finished-at="2020-08-09T23:29:09 CDT">
+        <test-method status="PASS" signature="login()[pri:0, instance:testCases.Test_City_IsDisplayed@14555e0a]" name="login" is-config="true" duration-ms="24535" started-at="2020-08-10T14:51:56 CDT" finished-at="2020-08-10T14:52:21 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="Sum_all_the_list_prices()[pri:0, instance:testCases.Test_Sum_All_The_search_List_Price@8462f31]" name="Sum_all_the_list_prices" duration-ms="24190" started-at="2020-08-09T23:29:09 CDT" finished-at="2020-08-09T23:29:33 CDT">
+        <test-method status="PASS" signature="verifyTest_City_IsDisplayed()[pri:0, instance:testCases.Test_City_IsDisplayed@14555e0a]" name="verifyTest_City_IsDisplayed" duration-ms="52185" started-at="2020-08-10T14:52:21 CDT" finished-at="2020-08-10T14:53:13 CDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Sum_all_the_list_prices -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:testCases.Test_Sum_All_The_search_List_Price@8462f31]" name="logout" is-config="true" duration-ms="3420" started-at="2020-08-09T23:29:33 CDT" finished-at="2020-08-09T23:29:37 CDT">
+        </test-method> <!-- verifyTest_City_IsDisplayed -->
+        <test-method status="PASS" signature="verify_test_city_isEnabled_in_the_search_filter_page()[pri:0, instance:testCases.Test_City_IsDisplayed@14555e0a]" name="verify_test_city_isEnabled_in_the_search_filter_page" duration-ms="34" started-at="2020-08-10T14:53:13 CDT" finished-at="2020-08-10T14:53:13 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_test_city_isEnabled_in_the_search_filter_page -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:testCases.Test_City_IsDisplayed@14555e0a]" name="logout" is-config="true" duration-ms="3443" started-at="2020-08-10T14:53:13 CDT" finished-at="2020-08-10T14:53:17 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="tearDowm()[pri:0, instance:testCases.Test_Sum_All_The_search_List_Price@8462f31]" name="tearDowm" is-config="true" duration-ms="1" started-at="2020-08-09T23:29:37 CDT" finished-at="2020-08-09T23:29:37 CDT">
+        <test-method status="PASS" signature="tearDowm()[pri:0, instance:testCases.Test_City_IsDisplayed@14555e0a]" name="tearDowm" is-config="true" duration-ms="1" started-at="2020-08-10T14:53:17 CDT" finished-at="2020-08-10T14:53:17 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDowm -->
-      </class> <!-- testCases.Test_Sum_All_The_search_List_Price -->
+      </class> <!-- testCases.Test_City_IsDisplayed -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
