@@ -1,6 +1,7 @@
 package base;
 
 import java.io.FileInputStream;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
@@ -9,7 +10,6 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import utilities.ExcelReader;
-import utilities.ExtentManager;
 
 import io.restassured.RestAssured;
 import utilities.ExcelReader;
