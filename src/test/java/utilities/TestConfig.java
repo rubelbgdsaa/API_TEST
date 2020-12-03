@@ -2,15 +2,15 @@ package utilities;
 public class TestConfig{
 
 
-	
+	//JAVA MAIL DETAILS
 	public static String server="smtp.gmail.com";
-	public static String from = "vaffaproject@gmail.com";
-	public static String password = "Selenium@123";
+	public static String from = "test.craigslist.proj@gmail.com";
+	public static String password = "Java@75038";
 	public static String[] to ={"seleniumcoaching@gmail.com","trainer@way2automation.com"};
 	public static String subject = "Extent Project Report";
 	
 	public static String messageBody ="TestMessage";
-	public static String attachmentPath="c:\\screenshot\\2017_10_3_14_49_9.jpg";
+	public static String attachmentPath="C:\\git\\test-output\\Mon_Aug_03_21_26_23_CDT_2020.jpg";
 	public static String attachmentName="error.jpg";
 	
 	

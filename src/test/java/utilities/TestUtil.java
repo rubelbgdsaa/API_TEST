@@ -1,52 +1,30 @@
 package utilities;
 
 import java.io.File;
+
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.Date;
 import java.util.Hashtable;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+
 import org.testng.annotations.DataProvider;
 
 
-import base.BaseClass;
+import base.BaseTest;
 
-public class TestUtil extends BaseClass {
+public class TestUtil extends BaseTest {
 
-	public static String screenshotPath;
-	public static String screenshotName;
-	
-	
-	public static void captureScreenshot() throws IOException {
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		Date d = new Date();
-		screenshotName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
-
-		//Extent Report
-		FileUtils.copyFile(scrFile,
-				new File(System.getProperty("user.dir") + "\\target\\surefire-reports\\html\\" + screenshotName));
-		
-		//for ReportNG - Email able Report
-		FileUtils.copyFile(scrFile,
-				new File(System.getProperty("user.dir") + "\\test-output\\" + screenshotName));
-		
-	}
 
 	@DataProvider(name="dp")
 	public Object[][] getData(Method m) {
 
 		String sheetName = m.getName();
 		
-		log.debug("sheetName: " + sheetName);
 		
 		int rows = excel.getRowCount(sheetName);
 		int cols = excel.getColumnCount(sheetName);
 		
-		log.debug("rows: " + rows);
-		log.debug("cols: " + cols);
 		
 		Object[][] data = new Object[rows - 1][1];
 		

@@ -3,16 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.Test_City_IsDisplayed">
+      <class name="testCases.GET_REQUEST_SAMPLE">
         <methods>
-          <include name="verifyTest_City_IsDisplayed"/>
-          <include name="verify_test_city_isEnabled_in_the_search_filter_page"/>
-          <include name="tearDowm"/>
-          <include name="login"/>
-          <include name="setup"/>
-          <include name="logout"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="CHECK_FW"/>
         </methods>
-      </class> <!-- testCases.Test_City_IsDisplayed -->
+      </class> <!-- testCases.GET_REQUEST_SAMPLE -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

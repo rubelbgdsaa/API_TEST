@@ -6,11 +6,13 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
 
+import org.apache.poi.common.usermodel.HyperlinkType;
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFCellStyle;
@@ -95,9 +97,10 @@ public class ExcelReader {
 		if(cell==null)
 			return "";
 		
-		if(cell.getCellType()==Cell.CELL_TYPE_STRING)
+		if(cell.getCellType()==CellType.STRING
+)
 			  return cell.getStringCellValue();
-		else if(cell.getCellType()==Cell.CELL_TYPE_NUMERIC || cell.getCellType()==Cell.CELL_TYPE_FORMULA ){
+		else if(cell.getCellType()==CellType.NUMERIC || cell.getCellType()==CellType.FORMULA ){
 			  
 			  String cellText  = String.valueOf(cell.getNumericCellValue());
 			  if (HSSFDateUtil.isCellDateFormatted(cell)) {
@@ -119,7 +122,7 @@ public class ExcelReader {
 			  
 			  
 			  return cellText;
-		  }else if(cell.getCellType()==Cell.CELL_TYPE_BLANK)
+		  }else if(cell.getCellType()==CellType.BLANK)
 		      return ""; 
 		  else 
 			  return String.valueOf(cell.getBooleanCellValue());
@@ -154,9 +157,9 @@ public class ExcelReader {
 		if(cell==null)
 			return "";
 		
-	  if(cell.getCellType()==Cell.CELL_TYPE_STRING)
+	  if(cell.getCellType()==CellType.STRING)
 		  return cell.getStringCellValue();
-	  else if(cell.getCellType()==Cell.CELL_TYPE_NUMERIC || cell.getCellType()==Cell.CELL_TYPE_FORMULA ){
+	  else if(cell.getCellType()==CellType.NUMERIC || cell.getCellType()==CellType.FORMULA ){
 		  
 		  String cellText  = String.valueOf(cell.getNumericCellValue());
 		  if (HSSFDateUtil.isCellDateFormatted(cell)) {
@@ -178,7 +181,7 @@ public class ExcelReader {
 		  
 		  
 		  return cellText;
-	  }else if(cell.getCellType()==Cell.CELL_TYPE_BLANK)
+	  }else if(cell.getCellType()==CellType.BLANK)
 	      return "";
 	  else 
 		  return String.valueOf(cell.getBooleanCellValue());
@@ -295,7 +298,7 @@ public class ExcelReader {
 	    hlink_style.setFont(hlink_font);
 	    //hlink_style.setWrapText(true);
 
-	    XSSFHyperlink link = createHelper.createHyperlink(XSSFHyperlink.LINK_FILE);
+	    XSSFHyperlink link = createHelper.createHyperlink(HyperlinkType.FILE);
 	    link.setAddress(url);
 	    cell.setHyperlink(link);
 	    cell.setCellStyle(hlink_style);
@@ -360,10 +363,10 @@ public class ExcelReader {
 			if(index==-1)
 				return false;
 			
-		XSSFCellStyle style = workbook.createCellStyle();
-		style.setFillForegroundColor(HSSFColor.GREY_40_PERCENT.index);
-		style.setFillPattern(HSSFCellStyle.SOLID_FOREGROUND);
-		
+//		XSSFCellStyle style = workbook.createCellStyle();
+//		style.setFillForegroundColor(HSSFColor.GREY_40_PERCENT.index);
+//		style.setFillPattern(HSSFCellStyle.SOLID_FOREGROUND);
+//		
 		sheet=workbook.getSheetAt(index);
 		
 		row = sheet.getRow(0);
@@ -377,8 +380,8 @@ public class ExcelReader {
 			cell = row.createCell(row.getLastCellNum());
 	        
 	        cell.setCellValue(colName);
-	        cell.setCellStyle(style);
-	        
+	       // cell.setCellStyle(style null);
+	    
 	        fileOut = new FileOutputStream(path);
 			workbook.write(fileOut);
 		    fileOut.close();		    
@@ -396,42 +399,42 @@ public class ExcelReader {
 	
 	
 	// removes a column and all the contents
-	public boolean removeColumn(String sheetName, int colNum) {
-		try{
-		if(!isSheetExist(sheetName))
-			return false;
-		fis = new FileInputStream(path); 
-		workbook = new XSSFWorkbook(fis);
-		sheet=workbook.getSheet(sheetName);
-		XSSFCellStyle style = workbook.createCellStyle();
-		style.setFillForegroundColor(HSSFColor.GREY_40_PERCENT.index);
-		XSSFCreationHelper createHelper = workbook.getCreationHelper();
-		style.setFillPattern(HSSFCellStyle.NO_FILL);
-		
-	    
-	
-		for(int i =0;i<getRowCount(sheetName);i++){
-			row=sheet.getRow(i);	
-			if(row!=null){
-				cell=row.getCell(colNum);
-				if(cell!=null){
-					cell.setCellStyle(style);
-					row.removeCell(cell);
-				}
-			}
-		}
-		fileOut = new FileOutputStream(path);
-		workbook.write(fileOut);
-	    fileOut.close();
-		}
-		catch(Exception e){
-			e.printStackTrace();
-			return false;
-		}
-		return true;
-		
-	}
-	
+//	public boolean removeColumn(String sheetName, int colNum) {
+//		try{
+//		if(!isSheetExist(sheetName))
+//			return false;
+//		fis = new FileInputStream(path); 
+//		workbook = new XSSFWorkbook(fis);
+//		sheet=workbook.getSheet(sheetName);
+//		XSSFCellStyle style = workbook.createCellStyle();
+//		style.setFillForegroundColor(HSSFColor.GREY_40_PERCENT.index);
+//		XSSFCreationHelper createHelper = workbook.getCreationHelper();
+//		style.setFillPattern(HSSFCellStyle.NO_FILL);
+//		
+//	    
+//	
+//		for(int i =0;i<getRowCount(sheetName);i++){
+//			row=sheet.getRow(i);	
+//			if(row!=null){
+//				cell=row.getCell(colNum);
+//				if(cell!=null){
+//					cell.setCellStyle(style);
+//					row.removeCell(cell);
+//				}
+//			}
+//		}
+//		fileOut = new FileOutputStream(path);
+//		workbook.write(fileOut);
+//	    fileOut.close();
+//		}
+//		catch(Exception e){
+//			e.printStackTrace();
+//			return false;
+//		}
+//		return true;
+//		
+//	}
+//	
 	
   // find whether sheets exists	
 	public boolean isSheetExist(String sheetName){

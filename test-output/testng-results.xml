@@ -1,37 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="80393" started-at="2020-08-10T14:51:56 CDT" finished-at="2020-08-10T14:53:17 CDT">
+  <suite name="Default suite" duration-ms="4356" started-at="2020-12-02T02:38:42 CST" finished-at="2020-12-02T02:38:46 CST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="80393" started-at="2020-08-10T14:51:56 CDT" finished-at="2020-08-10T14:53:17 CDT">
-      <class name="testCases.Test_City_IsDisplayed">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.Test_City_IsDisplayed@14555e0a]" name="setup" is-config="true" duration-ms="30828" started-at="2020-08-10T14:51:25 CDT" finished-at="2020-08-10T14:51:56 CDT">
+    <test name="Default test" duration-ms="4356" started-at="2020-12-02T02:38:42 CST" finished-at="2020-12-02T02:38:46 CST">
+      <class name="testCases.GET_REQUEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testCases.GET_REQUEST@291b4bf5]" name="setUp" is-config="true" duration-ms="603" started-at="2020-12-02T02:38:42 CST" finished-at="2020-12-02T02:38:42 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testCases.Test_City_IsDisplayed@14555e0a]" name="login" is-config="true" duration-ms="24535" started-at="2020-08-10T14:51:56 CDT" finished-at="2020-08-10T14:52:21 CDT">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="CREAT_CUST(java.util.Hashtable)[pri:0, instance:testCases.GET_REQUEST@291b4bf5]" name="CREAT_CUST" duration-ms="1828" started-at="2020-12-02T02:38:42 CST" data-provider="dp" finished-at="2020-12-02T02:38:44 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=ayeasha akther, email=penny16@gmail.com}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="verifyTest_City_IsDisplayed()[pri:0, instance:testCases.Test_City_IsDisplayed@14555e0a]" name="verifyTest_City_IsDisplayed" duration-ms="52185" started-at="2020-08-10T14:52:21 CDT" finished-at="2020-08-10T14:53:13 CDT">
+        </test-method> <!-- CREAT_CUST -->
+        <test-method status="PASS" signature="CREAT_CUST(java.util.Hashtable)[pri:0, instance:testCases.GET_REQUEST@291b4bf5]" name="CREAT_CUST" duration-ms="571" started-at="2020-12-02T02:38:44 CST" data-provider="dp" finished-at="2020-12-02T02:38:45 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=rubel hossain, email=jodi97@hotmail.com}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTest_City_IsDisplayed -->
-        <test-method status="PASS" signature="verify_test_city_isEnabled_in_the_search_filter_page()[pri:0, instance:testCases.Test_City_IsDisplayed@14555e0a]" name="verify_test_city_isEnabled_in_the_search_filter_page" duration-ms="34" started-at="2020-08-10T14:53:13 CDT" finished-at="2020-08-10T14:53:13 CDT">
+        </test-method> <!-- CREAT_CUST -->
+        <test-method status="PASS" signature="CREAT_CUST(java.util.Hashtable)[pri:0, instance:testCases.GET_REQUEST@291b4bf5]" name="CREAT_CUST" duration-ms="645" started-at="2020-12-02T02:38:45 CST" data-provider="dp" finished-at="2020-12-02T02:38:45 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=bellal chowdhury, email=ben20@gmail.com}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_test_city_isEnabled_in_the_search_filter_page -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:testCases.Test_City_IsDisplayed@14555e0a]" name="logout" is-config="true" duration-ms="3443" started-at="2020-08-10T14:53:13 CDT" finished-at="2020-08-10T14:53:17 CDT">
+        </test-method> <!-- CREAT_CUST -->
+        <test-method status="PASS" signature="CREAT_CUST(java.util.Hashtable)[pri:0, instance:testCases.GET_REQUEST@291b4bf5]" name="CREAT_CUST" duration-ms="577" started-at="2020-12-02T02:38:45 CST" data-provider="dp" finished-at="2020-12-02T02:38:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=evan mollah, email=sheila.schultz19@yahoo.com}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="PASS" signature="tearDowm()[pri:0, instance:testCases.Test_City_IsDisplayed@14555e0a]" name="tearDowm" is-config="true" duration-ms="1" started-at="2020-08-10T14:53:17 CDT" finished-at="2020-08-10T14:53:17 CDT">
+        </test-method> <!-- CREAT_CUST -->
+        <test-method status="PASS" signature="CREAT_CUST(java.util.Hashtable)[pri:0, instance:testCases.GET_REQUEST@291b4bf5]" name="CREAT_CUST" duration-ms="610" started-at="2020-12-02T02:38:46 CST" data-provider="dp" finished-at="2020-12-02T02:38:46 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=kalam shikder, email=rosalie_legros90@yahoo.com}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDowm -->
-      </class> <!-- testCases.Test_City_IsDisplayed -->
+        </test-method> <!-- CREAT_CUST -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.GET_REQUEST@291b4bf5]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-12-02T02:38:47 CST" finished-at="2020-12-02T02:38:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.GET_REQUEST -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
