@@ -1,0 +1,57 @@
+09/10/2020 21:19:19 devpinoyLogger Furniture clicked
+09/10/2020 21:19:19 devpinoyLogger NEWEST_MENU_IS_ACTIVETest Started
+09/10/2020 21:19:19 devpinoyLogger Verified Newest Menu is Active
+09/10/2020 21:19:20 devpinoyLogger TestUtil.screenshotName=Fri_Oct_09_21_19_20_CDT_2020.jpg
+09/10/2020 21:19:21 devpinoyLogger successfully logout
+09/10/2020 21:19:22 devpinoyLogger SAFETY_FOOTER_IS_ACTIVETest Started
+09/10/2020 21:19:23 devpinoyLogger Verified Safety Footer is Active
+09/10/2020 21:19:24 devpinoyLogger TestUtil.screenshotName=Fri_Oct_09_21_19_24_CDT_2020.jpg
+09/10/2020 21:19:24 devpinoyLogger successfully logout
+09/10/2020 21:19:26 devpinoyLogger CREATE_A_POSTING_IS_ACTIVETest Started
+09/10/2020 21:19:27 devpinoyLogger Verified Create a Posting is Active..................................................
+09/10/2020 21:19:27 devpinoyLogger TestUtil.screenshotName=Fri_Oct_09_21_19_27_CDT_2020.jpg
+09/10/2020 21:19:28 devpinoyLogger successfully logout
+09/10/2020 21:19:29 devpinoyLogger SEARCHED_ITEM_ELEMENTS_IS_ACTIVETest Started
+09/10/2020 21:19:30 devpinoyLogger TestUtil.screenshotName=Fri_Oct_09_21_19_30_CDT_2020.jpg
+09/10/2020 21:19:30 devpinoyLogger successfully logout
+09/10/2020 21:19:33 devpinoyLogger Furniture clicked
+09/10/2020 21:19:33 devpinoyLogger GALLERY_MENU_IS_ACTIVETest Started
+09/10/2020 21:19:33 devpinoyLogger Verified Gallery Menu i.....................................s Active
+09/10/2020 21:19:33 devpinoyLogger TestUtil.screenshotName=Fri_Oct_09_21_19_33_CDT_2020.jpg
+09/10/2020 21:19:34 devpinoyLogger successfully logout
+09/10/2020 21:19:36 devpinoyLogger SEARCH_BOX_IS_ACTIVETest Started
+09/10/2020 21:19:36 devpinoyLogger Verified Search Box is Active
+09/10/2020 21:19:36 devpinoyLogger TestUtil.screenshotName=Fri_Oct_09_21_19_36_CDT_2020.jpg
+09/10/2020 21:19:37 devpinoyLogger successfully logout
+09/10/2020 21:19:39 devpinoyLogger EVENT_CALENDER_IS_ACTIVETest Started
+09/10/2020 21:19:40 devpinoyLogger Verified Event Calender is Active
+09/10/2020 21:19:40 devpinoyLogger TestUtil.screenshotName=Fri_Oct_09_21_19_40_CDT_2020.jpg
+09/10/2020 21:19:41 devpinoyLogger successfully logout
+09/10/2020 21:19:43 devpinoyLogger LANGUAGE_IS_ACTIVETest Started
+09/10/2020 21:19:43 devpinoyLogger Language Espanol Selected
+09/10/2020 21:19:44 devpinoyLogger Language English Selected
+09/10/2020 21:19:44 devpinoyLogger Verified Language Change
+09/10/2020 21:19:44 devpinoyLogger TestUtil.screenshotName=Fri_Oct_09_21_19_44_CDT_2020.jpg
+09/10/2020 21:19:44 devpinoyLogger successfully logout
+09/10/2020 21:19:47 devpinoyLogger PRIVACY_FOOTER_IS_ACTIVETest Started
+09/10/2020 21:19:47 devpinoyLogger Verified Privacy Footer is Active
+09/10/2020 21:19:48 devpinoyLogger TestUtil.screenshotName=Fri_Oct_09_21_19_48_CDT_2020.jpg
+09/10/2020 21:19:48 devpinoyLogger successfully logout
+09/10/2020 21:19:50 devpinoyLogger HELP_FOOTER_IS_ACTIVETest Started
+09/10/2020 21:19:51 devpinoyLogger Verified Help Footer is Active
+09/10/2020 21:19:51 devpinoyLogger TestUtil.screenshotName=Fri_Oct_09_21_19_51_CDT_2020.jpg
+09/10/2020 21:19:52 devpinoyLogger successfully logout
+09/10/2020 21:19:54 devpinoyLogger FEEDBACK_FOOTER_IS_ACTIVETest Started
+09/10/2020 21:19:55 devpinoyLogger Verified Feedback Footer is Active
+09/10/2020 21:19:55 devpinoyLogger TestUtil.screenshotName=Fri_Oct_09_21_19_55_CDT_2020.jpg
+09/10/2020 21:19:56 devpinoyLogger successfully logout
+09/10/2020 21:19:58 devpinoyLogger ABOUT_FOOTER_IS_ACTIVETest Started
+09/10/2020 21:19:58 devpinoyLogger Verified About Footer is Active
+09/10/2020 21:19:59 devpinoyLogger TestUtil.screenshotName=Fri_Oct_09_21_19_59_CDT_2020.jpg
+09/10/2020 21:19:59 devpinoyLogger successfully logout
+09/10/2020 21:20:01 devpinoyLogger Furniture clicked
+09/10/2020 21:20:01 devpinoyLogger PAGINATION_IS_ACTIVETest Started
+09/10/2020 21:20:01 devpinoyLogger Verified Pagination is displayed
+09/10/2020 21:20:02 devpinoyLogger TestUtil.screenshotName=Fri_Oct_09_21_20_02_CDT_2020.jpg
+09/10/2020 21:20:02 devpinoyLogger successfully logout
+09/10/2020 21:20:03 devpinoyLogger Test is Completed
