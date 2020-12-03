@@ -9,18 +9,16 @@ import utilities.TestUtil;
 import base.BaseTest;
 import io.restassured.response.Response;
 
-public class GET_REQUEST_SAMPLE extends BaseTest {
+public class Rough_Sample extends BaseTest {
 
 	@Test
 	public void CHECK_FW() throws InterruptedException {
 
 		Response response = given().auth().basic(config.getProperty("validSecretKey"), "")
-				.formParam("email", "fsfdsafdfa@gmail.com")
+				.formParam("email", "fsfdsadfa@gmail.com")
 				.formParam("name", "fsdadsfasdfdsdf adfasdfasds")
 				.post(config.getProperty("baseURI") + config.getProperty("basePath")
 						+ config.getProperty("customerAPIEndPoint"));
-				Thread.sleep(2000);
-		response.prettyPrint();
 				
 		
 		

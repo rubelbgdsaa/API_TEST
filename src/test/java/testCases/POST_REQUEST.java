@@ -11,7 +11,7 @@ import utilities.TestUtil;
 import base.BaseTest;
 import io.restassured.response.Response;
 
-public class GET_REQUEST extends BaseTest {
+public class POST_REQUEST extends BaseTest {
 
 
 	@Test(dataProviderClass = TestUtil.class, dataProvider = "dp")

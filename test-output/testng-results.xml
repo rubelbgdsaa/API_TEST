@@ -1,72 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4356" started-at="2020-12-02T02:38:42 CST" finished-at="2020-12-02T02:38:46 CST">
+  <suite name="Default suite" duration-ms="4615" started-at="2020-12-02T21:42:08 CST" finished-at="2020-12-02T21:42:13 CST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4356" started-at="2020-12-02T02:38:42 CST" finished-at="2020-12-02T02:38:46 CST">
+    <test name="Default test" duration-ms="4615" started-at="2020-12-02T21:42:08 CST" finished-at="2020-12-02T21:42:13 CST">
       <class name="testCases.GET_REQUEST">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testCases.GET_REQUEST@291b4bf5]" name="setUp" is-config="true" duration-ms="603" started-at="2020-12-02T02:38:42 CST" finished-at="2020-12-02T02:38:42 CST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testCases.GET_REQUEST@31f9b85e]" name="setUp" is-config="true" duration-ms="22" started-at="2020-12-02T21:42:08 CST" finished-at="2020-12-02T21:42:08 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="CREAT_CUST(java.util.Hashtable)[pri:0, instance:testCases.GET_REQUEST@291b4bf5]" name="CREAT_CUST" duration-ms="1828" started-at="2020-12-02T02:38:42 CST" data-provider="dp" finished-at="2020-12-02T02:38:44 CST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{name=ayeasha akther, email=penny16@gmail.com}]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="GET_CUST()[pri:0, instance:testCases.GET_REQUEST@31f9b85e]" name="GET_CUST" duration-ms="4575" started-at="2020-12-02T21:42:09 CST" finished-at="2020-12-02T21:42:13 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CREAT_CUST -->
-        <test-method status="PASS" signature="CREAT_CUST(java.util.Hashtable)[pri:0, instance:testCases.GET_REQUEST@291b4bf5]" name="CREAT_CUST" duration-ms="571" started-at="2020-12-02T02:38:44 CST" data-provider="dp" finished-at="2020-12-02T02:38:45 CST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{name=rubel hossain, email=jodi97@hotmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CREAT_CUST -->
-        <test-method status="PASS" signature="CREAT_CUST(java.util.Hashtable)[pri:0, instance:testCases.GET_REQUEST@291b4bf5]" name="CREAT_CUST" duration-ms="645" started-at="2020-12-02T02:38:45 CST" data-provider="dp" finished-at="2020-12-02T02:38:45 CST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{name=bellal chowdhury, email=ben20@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CREAT_CUST -->
-        <test-method status="PASS" signature="CREAT_CUST(java.util.Hashtable)[pri:0, instance:testCases.GET_REQUEST@291b4bf5]" name="CREAT_CUST" duration-ms="577" started-at="2020-12-02T02:38:45 CST" data-provider="dp" finished-at="2020-12-02T02:38:46 CST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{name=evan mollah, email=sheila.schultz19@yahoo.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CREAT_CUST -->
-        <test-method status="PASS" signature="CREAT_CUST(java.util.Hashtable)[pri:0, instance:testCases.GET_REQUEST@291b4bf5]" name="CREAT_CUST" duration-ms="610" started-at="2020-12-02T02:38:46 CST" data-provider="dp" finished-at="2020-12-02T02:38:46 CST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{name=kalam shikder, email=rosalie_legros90@yahoo.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CREAT_CUST -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.GET_REQUEST@291b4bf5]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-12-02T02:38:47 CST" finished-at="2020-12-02T02:38:47 CST">
+        </test-method> <!-- GET_CUST -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.GET_REQUEST@31f9b85e]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-12-02T21:42:13 CST" finished-at="2020-12-02T21:42:13 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
